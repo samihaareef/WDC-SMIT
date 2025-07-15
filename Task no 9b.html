@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task no 9b</title>
+</head>
+<style>
+    body{
+        font-size: 12px;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: plum;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        border-radius: 8px;
+        display: flex;
+        }
+    input{
+        padding: 10px;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        border: solid #7a797992;
+        border-radius: 3px;
+        width: 100%;
+        background-color: rgb(171, 169, 169);
+     }
+    #gender{
+        display: flex;
+        align-items: center;
+        margin-top: 8px;
+        margin-right: 30px;
+    }
+    #terms{   
+        display:flex;
+        margin-top: 15px;
+        align-items: start;
+    }
+    button{
+        width: 110%;
+        padding: 10px;
+        background-color: #177eed;
+        color: beige;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+    button:hover{
+        background-color: #0f4c8e;
+    } 
+</style>
+<body>
+    <form>
+        <h2 style="margin-bottom: 35px; text-shadow: 0 0 8px ;text-align: center;">REGISTER FORM</h2>
+        <label for="name">ENTER YOUR NAME</label>
+        <br>
+        <input type="text" placeholder="YOUR NAME">
+        <br>
+        <label for="email">ENTER YOUR EMAIL</label>
+        <br>
+        <input type="email" placeholder="YOURNAME@gmail.com">
+        <br>
+        <label for="Password">ENTER YOUR PASSWORD</label>
+        <br>
+        <input type="password" placeholder="********">
+        <div id="gender">
+        <label for="gender" style="margin: 0px 0px 60px 30px;">GENDER</label>
+        <input type="radio" value="Male" style="cursor: pointer;">MALE
+        <input type="radio" value="Female" style="cursor: pointer;">FEMALE
+        </div>
+        <label for="country">SELECT YOUR COUNTRY</label>
+        <select name="country" style="background-color: rgb(171, 169, 169); width: 110%; height: 40px; margin-top: 10px;">
+            <option>USA</option>
+            <option>Pakistan</option>
+            <option>UK</option>
+            <option>Russia</option>
+        </select>
+        <div id="terms">
+        <input type="checkbox" name="terms" required="required" style="cursor: pointer;">
+        <label for="Terms and Conditions" style="align-items: center;">I AGREE TO THE TERMS AND CONDITIONS</label>
+        </div>
+        <button type="submit" value="submit">SUBMIT</button>
+    </form>
+</body>
+</html>
